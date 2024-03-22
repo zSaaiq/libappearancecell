@@ -1,5 +1,8 @@
-TARGET = iphone:clang:13.0:11.0
 ARCHS = arm64 arm64e
+TARGET = iphone:clang:15.6
+FINALPACKAGE = 1
+PREFIX = $(THEOS)/toolchain/Xcode.xctoolchain/usr/bin/
+THEOS_PACKAGE_SCHEME=rootless
 
 include $(THEOS)/makefiles/common.mk
 
